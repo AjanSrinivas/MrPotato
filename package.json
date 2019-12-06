@@ -1,0 +1,29 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "devDependencies": {
+    "bower": "latest",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "latest",
+    "gulp-livereload": "^1.5.0",
+    "gulp-nodemon": "latest",
+    "gulp-watch": "~0.6.4",
+    "jshint": "^2.10.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "debug": "~0.7.4",
+    "diskdb": "^0.1.17",
+    "ejs": "~0.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "sentiment": "^5.0.2",
+    "static-favicon": "~1.0.0",
+    "twitter": "^1.7.1"
+  }
+}

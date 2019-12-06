@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel='icon' type="image/png" href='/img/super-potato.png' sizes="64x64"/>
+    <title>Mr Potato</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/id-card.css' />
+  </head>
+
+  <body>
+    <h1>Rotten Potatoes </h1>
+    <input type="text" id="searchText" placeholder="Please search your tweets here!!">
+    <div class="cooperativeSum"></div>
+    <div class="results">
+           
+      <span class=" potatoMeter">
+        <span class="hidden negativePotato potatoImg">
+            <span class="">Tweets have made Mr.Potato upset!!</span> 
+            <img src="/img/angry-potato.png">
+        </span>
+        <span class="hidden positivePotato potatoImg">
+          <span class="">Mr.Potato seems to be delighted by the tweets!!</span> 
+          <img src="/img/happy-potato.png">
+        </span>
+        <span class="hidden neutralPotato potatoImg">
+          <span class="">Thats Mr.Potato's poker face!!</span>
+          <img src="/img/neutral-potato.png">
+        </span>
+      </span>
+      <lable class="loading">Loading.. Please wait</lable>
+      <br/>
+      <lable class="error">Oops.. Something went wrong</lable>
+      <br/>
+    </div>
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/handle-bar.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+
+    <div id="TweetResults"></div>
+    <script id="document-template" type="text/x-handlebars-template">
+    {{#each this}}
+    <div class="col-md-12 id-card-comp">
+      <div class="card">
+        <div {{#if negativeResult}}class="additional negativeGradient"{{/if}} {{#if neutralResult}}class="additional neutralGradient"{{/if}} {{#if positiveResult}}class="additional positiveGradient"{{/if}}>
+          <div class="user-card">
+            <img class="employeePic" src={{imgSrc}} />
+          </div>
+        </div>
+        <div class="general">
+          <h3>{{name}} </h3> 
+            <div class="value">{{tweet}}</div>          
+          <div class="coords">
+            <span class="label">Score: </span>
+            <span class="value">{{score}}</span>
+          </div>
+            <div class="coords">
+              <span class="label">Comparitive:</span>
+              <span class="value">{{comparative}}</span>
+            </div>
+            <div class="coords">
+              <span class="label">Re-tweeted:</span>
+              <span class="value">{{retweet}}</span>
+              <span class="pull-right">{{created_at}}</span>
+            </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </script>
+  </body>
+</html>

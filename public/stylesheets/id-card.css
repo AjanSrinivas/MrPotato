@@ -1,0 +1,216 @@
+.id-card-comp .employeePic{
+    border-radius: 110px;
+    margin-top: calc(100% + 25px);
+    padding: 0px 0;
+}
+  
+.id-card-comp .coords {
+    margin: 15px 0;
+  }
+
+  .id-card-comp .info{
+    cursor: pointer;
+  }
+
+  .id-card-comp .label{
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .id-card-comp .value{
+    font-size: 14px;
+  }
+
+ 
+  .id-card-comp .responsibilities{
+    color: #fff;
+    margin-top: 5%;
+    text-align: -webkit-auto;
+    word-break: break-word;
+  }
+  
+  .id-card-comp .center {
+    margin: 10px 10px;
+    width: 30%;
+    -webkit-transform: translate(-50%, -50%);
+  }
+  
+  .id-card-comp .card {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    background: linear-gradient(#f8f8f8, #fff);
+    box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+    box-shadow: 0 8px 16px -8px rgb(2, 255, 255);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5rem;
+    color: #000;
+  }
+  
+  .id-card-comp .card h1 {
+    text-align: center;
+  }
+  
+  .card .additional {
+    position: absolute;
+    height: 100%; 
+    /* background: linear-gradient(#dE685E, #EE786E); */
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .id-card-comp .card.green .additional {
+    background: linear-gradient(#92bCa6, #A2CCB6);
+  }
+  
+  
+  .id-card-comp .pullOverlay.additional {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .id-card-comp .card .additional .user-card {
+    float: left;
+  }
+  
+  .id-card-comp .card .additional .user-card::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10%;
+    right: -2px;
+    height: 80%;
+    border-left: 2px solid rgba(0,0,0,0.025);
+  }
+  
+  .id-card-comp .card .additional .user-card .level,
+  .id-card-comp .card .additional .user-card .points {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0,0,0,0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+  
+  .id-card-comp .card .additional .user-card .points {
+    top: 85%;
+    text-align: center;
+  }
+  
+  .id-card-comp .card .additional .user-card svg {
+    top: 50%;
+  }
+  
+  .id-card-comp .card .additional .more-info {
+    float: left;
+    position: absolute;
+    left: 200px;
+    height: 100%;
+    width: 65%;
+    padding: 5px 10px;
+    visibility: hidden;
+  }
+
+  .id-card-comp .pullOverlay .more-info{
+      visibility: visible !important;
+  }
+
+  .id-card-comp .card h3{
+      text-align: center;
+  }
+  
+  .id-card-comp .card .additional .more-info h3 {
+    color: #fff;
+    margin-bottom: 0;
+  }
+  
+  .id-card-comp .card.green .additional .more-info h3 {
+    color: #224C36;
+  }
+  
+  .id-card-comp .card .additional .coords {
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .id-card-comp .card.green .additional .coords {
+    color: #325C46;
+  }
+  
+  .id-card-comp .card .additional .coords span + span {
+    float: right;
+  }
+  
+  .id-card-comp .card .additional .stats {
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
+  }
+  
+  .id-card-comp .card.green .additional .stats {
+    color: #325C46;
+  }
+  
+  .id-card-comp .card .additional .stats > div {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .id-card-comp .card .additional .stats i {
+    display: block;
+  }
+  
+  .id-card-comp .card .additional .stats div.title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .id-card-comp .card .additional .stats div.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+  }
+  
+  .id-card-comp .card .additional .stats div.value.infinity {
+    font-size: 2.5rem;
+  }
+  
+  .id-card-comp .card .general {
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+  }
+  
+  .id-card-comp .card .general .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+  }
+
+  .card .fa-pencil-square-o{
+    position: absolute;
+    right: 0;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 2;
+  }
