@@ -7,11 +7,11 @@
   },
   "devDependencies": {
     "bower": "latest",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-jshint": "latest",
     "gulp-livereload": "^1.5.0",
     "gulp-nodemon": "latest",
-    "gulp-watch": "~0.6.4",
+    "gulp-watch": "~5.0.1",
     "jshint": "^2.10.3"
   },
   "dependencies": {
