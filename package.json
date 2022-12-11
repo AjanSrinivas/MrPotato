@@ -20,7 +20,7 @@
     "debug": "~0.7.4",
     "diskdb": "^0.1.17",
     "ejs": "~0.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "morgan": "^1.9.1",
     "sentiment": "^5.0.2",
     "static-favicon": "~1.0.0",
